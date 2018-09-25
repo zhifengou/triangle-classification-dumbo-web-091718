@@ -9,7 +9,11 @@ end
       :equilateral 
     elsif @one=@two ||@two=@three ||@one=@three 
     :isosceles
-    elsif
+    elsif @one!=@two&&@two!=@three
+    :scalene
+  else 
+    raise TriangleError
+  end
 end
 class TriangleError < StandardError
 end
