@@ -24,3 +24,4 @@ def good_triangle
   (@one>0&&@two>0&&@three>0)&&
   (@one+@two>@three||@one+@three>@two||@two+@three>@one)
 end
+end
