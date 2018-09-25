@@ -18,6 +18,7 @@ end
   end
 end
 class TriangleError < StandardError
+  "This is not a triangle"
 end
 
 def good_triangle
