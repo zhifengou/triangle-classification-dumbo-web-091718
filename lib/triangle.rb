@@ -8,7 +8,8 @@ end
     if @one=@two=@three 
       :equilateral 
     elsif @one=@two ||@two=@three ||@one=@three 
-    :
+    :isosceles
+    elsif
 end
 class TriangleError < StandardError
 end
