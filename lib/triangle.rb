@@ -5,7 +5,7 @@ class Triangle
     @three=three 
 end
   def kind 
-    if good_triangle==true
+    if  (@one>0&&@two>0&&@three>0)&&(@one+@two>@three&&@one+@three>@two&&@two+@three>@one)
     if @one==@two&&@two==@three
       :equilateral 
     elsif @one==@two ||@two==@three ||@one==@three 
@@ -21,8 +21,4 @@ class TriangleError < StandardError
   "This is not a triangle"
 end
 
-def good_triangle
-  (@one>0&&@two>0&&@three>0)&&
-  (@one+@two>@three&&@one+@three>@two&&@two+@three>@one)
-end
 end
