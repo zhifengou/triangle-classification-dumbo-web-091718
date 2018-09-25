@@ -5,7 +5,7 @@ class Triangle
     @three=three 
 end
   def kind 
-    if @one==@two&&@two==@three 
+    if @one==@two&&@two==@three&&@one>0&&@two>0&&@three>0 
       :equilateral 
     elsif @one==@two ||@two==@three ||@one==@three 
     :isosceles
