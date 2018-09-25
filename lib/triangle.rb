@@ -13,6 +13,7 @@ end
     elsif @one!=@two&&@two!=@three
     :scalene
   end
+    else
     raise TriangleError
   end
 end
