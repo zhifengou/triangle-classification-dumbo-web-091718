@@ -5,13 +5,14 @@ class Triangle
     @three=three 
 end
   def kind 
-    if good_triangle
+    if good_triangle==true
     if @one==@two&&@two==@three
       :equilateral 
     elsif @one==@two ||@two==@three ||@one==@three 
     :isosceles
     elsif @one!=@two&&@two!=@three
     :scalene
+  end
     raise TriangleError
   end
 end
