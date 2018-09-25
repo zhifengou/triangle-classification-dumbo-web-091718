@@ -17,4 +17,7 @@ end
 end
 class TriangleError < StandardError
 end
+
+def good_triangle
+  @one>0&&@two>0&&@three>0 
 end
