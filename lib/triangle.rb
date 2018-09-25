@@ -12,7 +12,6 @@ end
     :isosceles
     elsif @one!=@two&&@two!=@three&&(@one+@two>@three||@one+@three>@two||@two+@three>@one)
     :scalene
-  else 
     raise TriangleError
   end
 end
